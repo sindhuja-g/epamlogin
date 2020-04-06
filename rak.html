@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+<link rel = "stylesheet" type="text/css" href="Form.css">
+<link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+p {
+  border: 2px solid black;
+  outline: black solid 2px;
+  margin: auto;  
+  padding: 30px;
+  text-align: center;
+}
+body {font-family: Arial, Helvetica, sans-serif, width:50%;}
+form {border: 4px solid #f1f1f1 width:50%;}
+input[type=text] {
+  width: 15%;
+  padding: 10px 10px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+margin:1px 2px;
+curser:pointer;
+}
+ input[type=password] {
+  width: 15%;
+  padding: 10px 10px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+margin:1px 2px;
+curser:pointer;
+}
+input[type=submit] {
+  width: 15%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+h3{
+font-family:Arial;
+margin:100px auto;
+test-align:center;
+font-size:40px;
+max-width:400px;
+position:relative;
+}
+h3:before{
+content:"";
+display:block;
+width:300px;
+height:2px;
+background:#000;
+position:absolute;
+left:0;
+top:50%;
+z-index:-1;
+}
+h3:after{
+content:"";
+display:block;
+width:300px;
+height:2px;
+background:#000;
+position:absolute;
+right:0;
+top:50%;
+z-index:-1;
+}
+span{
+background:#fff;
+}
+body
+{
+    background-color :white;
+}
+h2{
+    color : white;
+    text-align : center;
+    
+}
+form
+{
+    align:"center";
+}
+button {
+  background-color:blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+.header{
+background-color:blue;
+color:white;
+text-align:center;
+padding:10px 18px;
+width:20%;
+}
+
+.button2 {background-color: #008CBA; } 
+.button3 {background-color: #f44336;} 
+.epambutton {background-color:orange;} 
+.container {
+  padding: 16px;
+}
+
+h2:before {
+    content:"";
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.5em;
+    border-top: 1px solid black;
+    z-index: -1;
+width:50%;
+}
+span.psw {
+  float: left;
+  padding-top: 6px;
+width:30%;
+}
+span.register {
+  float: absolute;
+  padding-top: 6px;
+width: 300px;
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+
+span.register {
+     display: block;
+     float: none;
+  }
+  
+  }
+div.imgcontainer{
+  border-style:outset;
+border-radius:9px;
+border-width:7px;
+border-top-color:white;
+border-left-color:white;
+border-bottom-right-radius:6px;
+border-right-color:black;
+border-bottom-color:black;
+width:400px;
+height:500px;
+}
+
+}
+</style>
+</head>
+
+<body>
+<p>
+<center>
+<br><br>
+<div class="header">
+<p class="outset"></p>
+<h5>Sign in </h5>
+</div>
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    
+  </div>
+  <div class="container">
+    <label for="uname"></b></label>
+    <input type="text"  placeholder="mail@example.com"name="uname"  size="30"><label for="psw"><b></b></label><br>
+
+<div class="container">
+<span class="input-icon"><i class="fa fa-lock"></i></span>
+    <input class="form-control" type="Password"
+   placeholder="Password" name="psw" ><br><br>
+     <button type="submit">sign in</button>
+  </div>
+<div class="container" style="background-color:white">
+    
+    <span class="psw">Forgot your password?</span>
+<span class="register">register!</span>
+</div>
+<h3><span>OR</span></h3>
+  <button class="button button2">f</button><br>
+    <button class="button button3">g</button><br>
+<button type="submit" class="epambutton">&#60EPAM LOGIN&#62</button>
+</form>
+</center>
+</p>
+</body>
+</html>
